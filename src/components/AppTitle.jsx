@@ -1,4 +1,4 @@
-const AppTitle = props => {
+export default function AppTitle(props) {
   const {
     title = 'Box Office',
     subtitle = 'Are you lokking for a movie or an actor?',
@@ -10,6 +10,4 @@ const AppTitle = props => {
       <p>{subtitle}</p>
     </div>
   );
-};
-
-export default AppTitle;
+}
