@@ -1,4 +1,5 @@
 import ShowCard from './ShowCard';
+import NotFoundImgSrc from '../../assets/notfound.png';
 
 const ShowGrid = ({ shows }) => {
   return (
@@ -7,7 +8,7 @@ const ShowGrid = ({ shows }) => {
         <ShowCard
           key={data.show.id}
           name={data.show.name}
-          image={data.show.image ? data.show.image.medium : '/notfound.png'}
+          image={data.show.image ? data.show.image.medium : NotFoundImgSrc}
           summary={data.show.summary}
           id={data.show.id}
         />
